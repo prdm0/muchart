@@ -25,7 +25,14 @@ This function calculates statistical measures for the gamma distribution
 based on the given data.
 }
 \examples{
-data <- r_g(lots = 5, n = 10, mu = 5, k = 2)
-stats_g(data = data)
+
+set.seed(0)
+x <- r_g(lots = 1000, n = 10, mu = 5, k = 2)
+
+# Estimate for maximum likelihood
+stats_g(data = x)
+
+# Using the true parameters
+stats_g(data = x, mu = 5, k = 2)
 
 }

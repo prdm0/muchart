@@ -127,8 +127,15 @@ limits_g <-
 #' @param ... Additional arguments to be passed `lbfgs::lbfgs()`
 #' @return A list containing the statistical measures and other information
 #' @examples
-#' data <- r_g(lots = 5, n = 10, mu = 5, k = 2)
-#' stats_g(data = data)
+#'
+#' set.seed(0)
+#' x <- r_g(lots = 1000, n = 10, mu = 5, k = 2)
+#'
+#' # Estimate for maximum likelihood
+#' stats_g(data = x)
+#'
+#' # Using the true parameters
+#' stats_g(data = x, mu = 5, k = 2)
 #'
 #' @export
 stats_g <- function(data, alpha = 0.0027, mu = NULL, k = NULL, ...) {

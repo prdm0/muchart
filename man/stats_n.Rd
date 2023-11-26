@@ -25,7 +25,12 @@ Calculate statistics for a normal distribution control chart
 }
 \examples{
 set.seed(0)
-dados <- r_n(lots = 100e3L, n = 25, mu = 1, sd = 1.7)
-stats_n(data = dados, alpha = 0.0027)
+x <- r_n(lots = 1000, n = 10, mu = 1, sd = 1.7)
+
+# Estimate for maximum likelihood
+stats_n(data = x, alpha = 0.0027)
+
+# Useing the true parameters
+stats_n(data = x, alpha = 0.0027, mu = 1, sd = 1.7)
 
 }

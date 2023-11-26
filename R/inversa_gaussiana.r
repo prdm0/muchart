@@ -130,8 +130,14 @@ limits_ig <-
 #' @return A list containing the estimated parameters, alpha-hat, ARL, MRL, SDRL, control limits, convergence status, and value of the objective function.
 #'
 #' @examples
-#' data <- r_ig(lots = 10, n = 20, mu = 1, lambda = 2)
-#' stats_ig(data = data)
+#' set.seed(0)
+#' x <- r_ig(lots = 1000, n = 10, mu = 1, lambda = 2)
+#'
+#' # Estimate for maximum likelihood
+#' stats_ig(data = x)
+#'
+#' # Using the true parameters
+#' stats_ig(data = x, mu = 1, lambda = 2)
 #'
 #' @export
 stats_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL, ...) {

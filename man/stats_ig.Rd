@@ -24,7 +24,13 @@ A list containing the estimated parameters, alpha-hat, ARL, MRL, SDRL, control l
 This function calculates various statistical measures for the inverse Gaussian control chart.
 }
 \examples{
-data <- r_ig(lots = 10, n = 20, mu = 1, lambda = 2)
-stats_ig(data = data)
+set.seed(0)
+x <- r_ig(lots = 1000, n = 10, mu = 1, lambda = 2)
+
+# Estimate for maximum likelihood
+stats_ig(data = x)
+
+# Using the true parameters
+stats_ig(data = x, mu = 1, lambda = 2)
 
 }

@@ -25,7 +25,12 @@ Calculate statistical measures for a Beta Prime control chart
 }
 \examples{
 set.seed(0)
-dados <- r_bp(lots = 10, n = 5, mu = 1, phi = 2)
-stats_bp(data = dados, alpha = 0.0027)
+x <- r_bp(lots = 1000, n = 10, mu = 1, phi = 2)
+
+# Estimate for maximum likelihood
+stats_bp(data = x, alpha = 0.0027)
+
+# Useing the true parameters
+stats_bp(data = x, alpha = 0.0027, mu = 1, phi = 2)
 
 }
