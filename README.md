@@ -41,7 +41,7 @@ install.packages("remotes")
 Then, you can install muchart package from github.
 
 ``` r
-remotes::install_github("pedro-marinho/muchart")
+remotes::install_github("prdm0/muchart")
 ```
 
 ### Authors

@@ -77,66 +77,66 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">0</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="r_bp.html">r_bp</a></span><span class="op">(</span>lots <span class="op">=</span> <span class="fl">1000</span>, n <span class="op">=</span> <span class="fl">10</span>, mu <span class="op">=</span> <span class="fl">1</span>, phi <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="r_bp.html">r_bp</a></span><span class="op">(</span>lots <span class="op">=</span> <span class="fl">1000</span>, n <span class="op">=</span> <span class="fl">10</span>, mu <span class="op">=</span> <span class="fl">1</span>, phi <span class="op">=</span> <span class="fl">1.7</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Estimate for maximum likelihood</span></span></span>
 <span class="r-in"><span><span class="fu">stats_bp</span><span class="op">(</span>data <span class="op">=</span> <span class="va">x</span>, alpha <span class="op">=</span> <span class="fl">0.0027</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $mu_hat</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.007516</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.010626</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $phi_hat</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.930415</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.720167</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $alpha_hat</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.007</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.003</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $ARL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 142.8571</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 333.3333</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $MRL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 98.67405</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 230.7023</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $SDRL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 142.3563</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 332.833</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $li</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.4248392</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.4083773</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $ls</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2.646655</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2.798659</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $convergence</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] -994</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $value</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 175.5181</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 222.763</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Useing the true parameters</span></span></span>
-<span class="r-in"><span><span class="fu">stats_bp</span><span class="op">(</span>data <span class="op">=</span> <span class="va">x</span>, alpha <span class="op">=</span> <span class="fl">0.0027</span>, mu <span class="op">=</span> <span class="fl">1</span>, phi <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">stats_bp</span><span class="op">(</span>data <span class="op">=</span> <span class="va">x</span>, alpha <span class="op">=</span> <span class="fl">0.0027</span>, mu <span class="op">=</span> <span class="fl">1</span>, phi <span class="op">=</span> <span class="fl">1.7</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $mu_hat</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $phi_hat</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1.7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $alpha_hat</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.007</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.003</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $ARL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 142.8571</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 333.3333</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $MRL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 98.67405</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 230.7023</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $SDRL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 142.3563</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 332.833</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $li</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.4265174</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.401327</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $ls</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2.58941</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2.791344</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $convergence</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
