@@ -25,12 +25,12 @@ This function calculates various statistical measures for the inverse Gaussian c
 }
 \examples{
 set.seed(0)
-x <- r_ig(lots = 1000, n = 10, mu = 1, lambda = 2)
+x <- r_ig(lots = 1000, n = 10, mu = 1, lambda = 1.7)
 
 # Estimate for maximum likelihood
 stats_ig(data = x)
 
 # Using the true parameters
-stats_ig(data = x, mu = 1, lambda = 2)
+stats_ig(data = x, mu = 1, lambda = 1.7)
 
 }

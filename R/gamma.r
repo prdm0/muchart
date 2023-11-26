@@ -129,13 +129,13 @@ limits_g <-
 #' @examples
 #'
 #' set.seed(0)
-#' x <- r_g(lots = 1000, n = 10, mu = 5, k = 2)
+#' x <- r_g(lots = 1000, n = 10, mu = 1, k = 1.7)
 #'
 #' # Estimate for maximum likelihood
 #' stats_g(data = x)
 #'
 #' # Using the true parameters
-#' stats_g(data = x, mu = 5, k = 2)
+#' stats_g(data = x, mu = 1, k = 1.7)
 #'
 #' @export
 stats_g <- function(data, alpha = 0.0027, mu = NULL, k = NULL, ...) {

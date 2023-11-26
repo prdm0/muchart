@@ -1,6 +1,18 @@
+# BEGIN: Missing imports
 ^muchart\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
-^img/$
 ^logo\.png$
-
+^README\.md$
+^README\.html$
+^README\.Rmd$
+^\.gitignore$
+^\.Rhistory$
+^\.RData$
+^\.git/$
+# END: Missing imports
+^docs/
+^_pkgdown\.yml$
+^pkgdown
+^img
+^README_files
