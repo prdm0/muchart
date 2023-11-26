@@ -4,7 +4,7 @@
 \alias{r_ig}
 \title{Generate random samples from the inverse Gaussian distribution}
 \usage{
-r_ig(lots, n, mu, lambda, lotes = TRUE)
+r_ig(lots, n, mu, lambda)
 }
 \arguments{
 \item{lots}{The number of lots to generate.}
@@ -14,8 +14,6 @@ r_ig(lots, n, mu, lambda, lotes = TRUE)
 \item{mu}{The mean parameter of the distribution.}
 
 \item{lambda}{The shape parameter of the distribution.}
-
-\item{lotes}{Logical indicating whether to return the lots as separate matrices.}
 }
 \value{
 A matrix of random samples from the inverse Gaussian distribution.

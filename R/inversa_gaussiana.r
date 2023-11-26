@@ -29,15 +29,14 @@ d_sample_mean_ig <- function(x, n, mu, lambda) {
 #' @param n The number of observations per lot.
 #' @param mu The mean parameter of the distribution.
 #' @param lambda The shape parameter of the distribution.
-#' @param lotes Logical indicating whether to return the lots as separate matrices.
-#'
+
 #' @return A matrix of random samples from the inverse Gaussian distribution.
 #'
 #' @examples
 #' r_ig(lots = 5, n = 10, mu = 1, lambda = 2)
 #'
 #' @export
-r_ig <- function(lots, n, mu, lambda, lotes = TRUE) {
+r_ig <- function(lots, n, mu, lambda) {
   observations <- function() {
     statmod::rinvgauss(n = n * lots, mean = mu, shape = lambda)
   }
