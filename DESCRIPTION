@@ -1,0 +1,20 @@
+Package: muchart
+Title: Control Charts for Sample Mean of Gaussian, Inverse Gaussian, Gamma, and Beta Prime Distributions
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Pedro Rafael", "D. Marinho", , "pedro.rafael.marinho@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1591-8300")),
+    person("Luiz", "M. A. Lima-Filho", , "luizmalf@gmail.com", role = c("aut")),
+    person("Marcelo", "Bourguignon", , "m.p.bourguignon@gmail.com", role = c("aut")),
+    person("Rodrigo", "B. Silva", , "rodrigobs29@gmail.com", role = c("aut"))
+ )
+Description: Control Charts for Sample Mean of Gaussian, Inverse Gaussian, Gamma, and Beta Prime Distributions. This package generates pseudo-random numbers from the distributions described in the title in batches of samples. It obtains maximum likelihood estimates that index the distributions of the sample means of the respective distributions. It calculates control limits and statistics for monitoring the performance of control charts, such as ARL (Average Run Length), MRL (Median Run Length), and SDRL (Standard Deviation Run Length).
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+    extraDistr,
+    lbfgs,
+    numDeriv,
+    statmod
