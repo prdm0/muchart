@@ -77,52 +77,52 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">r_g</span><span class="op">(</span>lots <span class="op">=</span> <span class="fl">5</span>, n <span class="op">=</span> <span class="fl">10</span>, mu <span class="op">=</span> <span class="fl">5</span>, k <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                n_1      n_2      n_3       n_4       n_5      n_6       n_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1 0.2306129 3.481441 5.265898 1.5721771 7.0079743 3.145348 1.5488450</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2 2.4698376 3.770118 6.840743 6.7213215 0.9809688 5.353342 2.6074378</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3 5.3660739 6.924872 7.222694 0.5277633 5.5769486 2.630632 2.1305559</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4 4.5158987 3.967926 3.434960 4.9838374 0.4242246 3.802158 1.4891646</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5 1.6840366 2.933131 3.558168 7.0181150 4.6297357 3.228559 0.7206962</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               n_8      n_9      n_10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1 1.621441 5.990145  7.265390</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2 5.056510 4.051403  5.991450</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3 3.873233 6.223946  2.444264</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4 4.367323 1.983253  9.463826</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5 1.833212 4.357169 14.675165</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                n_1       n_2      n_3       n_4       n_5      n_6        n_7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1 2.2816118 1.2781197 4.572948  2.446300  3.918070 3.085900  0.6875842</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2 1.6760680 8.8235642 2.113627  6.955465  5.519662 1.158185  0.7223922</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3 7.6051816 2.1493004 3.984651 15.787989  4.450012 5.070149 12.5033151</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4 6.6083664 0.9482377 2.840648  8.697761 10.005007 3.113916  4.9069766</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5 0.2935901 5.6279017 7.590779  2.325448  4.240354 3.611663  3.6096849</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 n_8      n_9      n_10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1 13.4076803 3.760881 16.085816</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2  3.8560604 4.572052  2.962140</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3  0.9279026 6.254546  1.372819</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4  6.5543678 1.839749  6.367906</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5  3.0485593 6.543366  5.905811</span>
 <span class="r-in"><span><span class="fu">r_g</span><span class="op">(</span>lots <span class="op">=</span> <span class="fl">10</span>, n <span class="op">=</span> <span class="fl">20</span>, mu <span class="op">=</span> <span class="fl">10</span>, k <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                 n_1       n_2       n_3       n_4       n_5       n_6       n_7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1   3.530555 18.745993  5.277692 13.440874  3.978610  4.002096  8.539166</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2   2.828936 21.874226  4.251740 12.228691 10.257121  9.970440  9.402647</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3   9.065790 11.080983  9.920845  6.649956  4.985287 12.201028  7.101274</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4   3.592314 11.633499  5.115479 13.778843 26.576327 10.946246  5.949079</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5   4.271530  9.958557 20.142099  4.426171  5.967863 18.445734  6.663649</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6   8.008730  3.875462  8.239342 15.680625 18.347969 11.113654  5.667643</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7   2.205725  4.533894 12.889465  6.829994 12.212867  6.615006  7.338829</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8  12.794596 15.062922  6.475082 13.318522  3.821083 12.857830  4.370034</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9   5.909503  9.653653  7.465011  4.574249  5.112550 22.217202 17.612645</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10 15.755549  5.676460  5.725903  7.472506  6.867178 10.808034  6.213943</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1  10.741929 10.044320  8.244261 11.564048  5.994616 12.727806 11.666263</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2   5.537469  9.225203  3.827406 13.854322  8.574342  6.380158  2.664252</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3  12.781700  7.693221  7.376669 13.084434  1.659673  5.551799  8.313605</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4   4.259296  6.627225 11.858231 19.610390 15.540312  3.933547  6.530336</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5   7.349011 20.641745  2.206597 15.552519  7.951023 10.407438 13.871795</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6  14.659314 17.260379 13.634127 10.134460  3.743507  2.291556  7.129246</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7  16.454259  5.232112  7.927636  4.333163  3.928410  8.342521  6.462735</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8   6.909427  7.660857  8.701370  3.722425  9.874610  4.549550  3.904885</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9  11.566090 14.194516  8.691190  9.763665 13.855601  3.947785 11.128885</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10 18.012117  4.392613 13.601328  8.145837  8.802944 15.348699  7.713354</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                 n_8       n_9      n_10      n_11      n_12      n_13      n_14</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1  25.604036  4.256148 12.440284  2.343005  8.378437  3.448972 10.869243</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2  14.728591 11.220625  9.802526  4.335798  5.740768  8.779363 13.856093</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3   4.369662  3.149301  4.921387  2.755715 11.375320 18.261422  2.346738</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4  16.805793  7.720454  7.235868  7.559877  3.731666 12.906109  7.941600</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5   6.095357  5.022649  7.447567 36.786573  3.268798 11.458580  7.540272</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6   6.107674  9.501635  1.918261 12.326749 20.225987  6.577669  3.685347</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7   5.813579 12.403412  9.928307  9.288640  4.755508  7.826156  5.157620</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8   6.748629 19.953650 18.490332  3.824229 10.283238  6.919684 10.016787</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9   7.041647  9.452198  8.035234  6.919880  5.578689  7.290283  6.660190</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10 10.306135  4.495741 32.796702  9.629607 18.386232  4.868321  6.931140</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                n_15      n_16      n_17      n_18       n_19      n_20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1  11.572491 12.159100 11.186654  8.782650 19.4124611  8.786640</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2  12.250431  3.603159 16.538090  8.728797  5.8847951 13.441429</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3   1.617928 15.234187 20.519132  5.308265  5.2515194 13.740760</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4   9.917609 15.765877 18.113711  9.357749  7.6922205  7.972778</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5   4.089003 12.770748  5.207573 17.876727  1.2311057 10.347615</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6  17.776988 14.845682  9.872680  3.146730 14.5916447  9.333291</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7   4.023192  7.121308  8.499430  6.218307 18.7953716 18.704120</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8   5.508379  9.899286  5.110512  5.498690  0.9964247  2.888930</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9  12.102656  2.896026 18.368073 23.605246  5.6389802  6.104726</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10  2.346300  7.940153  5.460298  7.929598  7.4942705  7.389152</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1   6.145520 16.659947 11.899689  2.698344  4.064104 10.850855  8.927837</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2   6.616269  8.456299  8.770646 12.700720  8.986498 11.613886  1.889290</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3   7.608568  2.969028  8.716384  9.364953  8.490128 14.950009 13.219567</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4   1.922294  8.886718 18.821817 19.936110 11.759234  3.181109 14.473748</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5  12.110711  1.876068  5.952950  4.640231  5.782811 10.674071  6.422605</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6  10.573291 11.525478 19.116346  8.468323  2.495781 12.620998 10.538755</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7   7.640270 28.453540  8.097893  3.541145 20.024816  3.449702  2.231856</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8  17.245643 16.170672 14.462257 11.144143 13.132277  7.750371 20.039809</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9  10.502207  4.796470 15.720816 27.182180 12.973257  4.473110 13.347196</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10  4.896088 14.940132 11.827663 14.239477 16.296607  7.432843 11.380143</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                n_15      n_16      n_17      n_18      n_19      n_20</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_1  14.979456 10.464119 13.495248  8.753254  6.322470  9.095444</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_2   6.621277  2.145034  6.741984  6.169931  9.215138 16.272095</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_3  10.646334  4.300366  6.580325 12.908007  6.487063  8.889619</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_4  11.472998  8.138409  7.776728 12.422673  7.453465 19.120991</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_5   5.285252 12.649595 11.387380  9.820839  6.192207  7.629357</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_6  16.546793 13.449786  2.991117 11.297122 11.780838 13.951422</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_7  21.298770  5.887239  8.181041 13.046851  8.391125 13.358762</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_8   7.640941  9.633420  9.683433  7.340884  7.616715  6.396506</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_9  16.172705  9.693878 10.063697  7.261278  6.534431 13.464379</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sample_10  9.122450 17.233752  7.688916  7.096787  6.229687 14.190557</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

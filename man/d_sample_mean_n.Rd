@@ -13,7 +13,8 @@ d_sample_mean_n(x, n, mu, sd)
 
 \item{mu}{The mean of the distribution}
 
-\item{sd}{The standard deviation of the distribution}
+\item{sd}{The standard deviation of the distribution
+Construct control limits using echarts4r}
 }
 \value{
 The density of the sample mean

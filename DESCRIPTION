@@ -17,4 +17,7 @@ Imports:
     extraDistr,
     lbfgs,
     numDeriv,
-    statmod
+    statmod,
+    cowplot,
+    ggplot2,
+    scattermore
