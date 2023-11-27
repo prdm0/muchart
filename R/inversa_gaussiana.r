@@ -230,8 +230,8 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
     ) +
     guides(color = guide_legend(title = NULL)) +
     theme(
-      plot.title = element_text(size = 15, face = "bold", margin = margin(b = 10)),
-      plot.subtitle = element_text(size = 12),
+      plot.title = element_text(size = 10, face = "bold", margin = margin(b = 10)),
+      plot.subtitle = element_text(size = 8),
       axis.title.x = element_text(
         size = 20, face = "bold",
         margin = margin(30, 0, 0, 0)
@@ -240,9 +240,9 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
         size = 20, face = "bold",
         margin = margin(0, 30, 0, 0)
       ),
-      axis.text = element_text(size = 12),
-      legend.title = element_text(size = 12),
-      legend.text = element_text(size = 12),
+      axis.text = element_text(size = 8),
+      legend.title = element_text(size = 8),
+      legend.text = element_text(size = 8),
       legend.position = "top",
       plot.margin = margin(0, 0, 0, 0, "cm") # Adjust the position of the second annotation
     )
@@ -254,7 +254,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
 
   p <-
@@ -264,7 +264,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
   p <-
     add_sub(
@@ -273,7 +273,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
 
   p <-
@@ -283,7 +283,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
 
   p <-
@@ -293,7 +293,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
 
   p <-
@@ -303,7 +303,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
 
   p <-
@@ -313,7 +313,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 12
+      size = 8
     )
   ggdraw(p)
 }
