@@ -196,7 +196,7 @@ stats_bp <- function(data, alpha = 0.0027, mu = NULL, phi = NULL, ...) {
 #'
 #' @export
 chart_bp <- function(data, alpha = 0.0027, mu = NULL, phi = NULL) {
-  limits <- stats_ig(data = data, alpha = alpha, mu = mu, phi = phi)
+  limits <- stats_bp(data = data, alpha = alpha, mu = mu, phi = phi)
   li <- limits$li
   ls <- limits$ls
   x <- 1:nrow(data)
