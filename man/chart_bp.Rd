@@ -13,7 +13,7 @@ chart_bp(data, alpha = 0.0027, mu = NULL, phi = NULL)
 
 \item{mu}{The mean of the distribution}
 
-\item{phi}{The shape parameter of the distribution}
+\item{phi}{The shape parameter}
 }
 \value{
 An ggplot2 object with the control limits plot
