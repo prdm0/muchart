@@ -210,17 +210,17 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
   if (nrow(data) > 100e3L) {
     p <- p + geom_scattermore(aes(x = data$Observation, y = y, color = data$outside))
   } else {
-    p <- p + geom_point(aes(x = data$Observation, y = y, color = data$outside), size = 5, alpha = 0.7)
+    p <- p + geom_point(aes(x = data$Observation, y = y, color = data$outside), size = 2, alpha = 0.7)
   }
 
-  p <- p + geom_hline(aes(yintercept = li), color = "#00740e", size = 4, alpha = 0.7) +
-    geom_hline(aes(yintercept = ls), color = "#00740e", size = 4, alpha = 0.7) +
+  p <- p + geom_hline(aes(yintercept = li), color = "#00740e", size = 2, alpha = 0.7) +
+    geom_hline(aes(yintercept = ls), color = "#00740e", size = 2, alpha = 0.7) +
     scale_color_manual(
       values = c("#5555ff", "#fd3b3b"),
       breaks = c(FALSE, TRUE),
       labels = c("Under control", "Out of control")
     ) +
-    geom_hline(aes(yintercept = mu), color = "black", size = 4, alpha = 0.7) +
+    geom_hline(aes(yintercept = mu), color = "black", size = 2, alpha = 0.7) +
     labs(
       title = "Inverse Gaussian control chart for sample mean",
       subtitle = "",
@@ -230,8 +230,8 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
     ) +
     guides(color = guide_legend(title = NULL)) +
     theme(
-      plot.title = element_text(size = 30, face = "bold", margin = margin(b = 10)),
-      plot.subtitle = element_text(size = 20),
+      plot.title = element_text(size = 15, face = "bold", margin = margin(b = 10)),
+      plot.subtitle = element_text(size = 12),
       axis.title.x = element_text(
         size = 20, face = "bold",
         margin = margin(30, 0, 0, 0)
@@ -240,9 +240,9 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
         size = 20, face = "bold",
         margin = margin(0, 30, 0, 0)
       ),
-      axis.text = element_text(size = 20),
-      legend.title = element_text(size = 20),
-      legend.text = element_text(size = 20),
+      axis.text = element_text(size = 12),
+      legend.title = element_text(size = 12),
+      legend.text = element_text(size = 12),
       legend.position = "top",
       plot.margin = margin(0, 0, 0, 0, "cm") # Adjust the position of the second annotation
     )
@@ -254,7 +254,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
 
   p <-
@@ -264,7 +264,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
   p <-
     add_sub(
@@ -273,7 +273,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
 
   p <-
@@ -283,7 +283,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
 
   p <-
@@ -293,7 +293,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
 
   p <-
@@ -303,7 +303,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
 
   p <-
@@ -313,7 +313,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 12
     )
   ggdraw(p)
 }
