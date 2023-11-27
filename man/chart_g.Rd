@@ -13,7 +13,7 @@ chart_g(data, alpha = 0.0027, mu = NULL, k = NULL)
 
 \item{mu}{The mean of the distribution}
 
-\item{k}{The shape parameter}
+\item{k}{The shape parameter of the distribution}
 }
 \value{
 An ggplot2 object with the control limits plot

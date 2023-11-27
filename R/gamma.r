@@ -172,7 +172,7 @@ stats_g <- function(data, alpha = 0.0027, mu = NULL, k = NULL, ...) {
 #' @param data The data points (matrix)
 #' @param alpha The significance level for control limits
 #' @param mu The mean of the distribution
-#' @param k The shape parameter
+#' @param k The shape parameter of the distribution
 #'
 #' @return An ggplot2 object with the control limits plot
 #'
@@ -221,7 +221,7 @@ chart_g <- function(data, alpha = 0.0027, mu = NULL, k = NULL) {
     ) +
     geom_hline(aes(yintercept = mu), color = "black", size = 4, alpha = 0.7) +
     labs(
-      title = "Gamma control chart for sample mean",
+      title = "Control chart for sample mean",
       subtitle = "",
       x = bquote(bold("Observations")),
       y = bquote(bold("Sample mean")),

@@ -160,7 +160,7 @@ stats_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL, ...) {
 #' @param data The data points (matrix)
 #' @param alpha The significance level for control limits
 #' @param mu The mean of the distribution
-#' @param sd The standard deviation of the distribution
+#' @param sd The shape parameter (standard deviation)
 #'
 #' @return An ggplot2 object with the control limits plot
 #'
@@ -197,19 +197,19 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
   if (nrow(data) > 100e3L) {
     p <- p + geom_scattermore(aes(x = data$Observation, y = y, color = data$outside))
   } else {
-    p <- p + geom_point(aes(x = data$Observation, y = y, color = data$outside), size = 5, alpha = 0.7)
+    p <- p + geom_point(aes(x = data$Observation, y = y, color = data$outside), size = 2, alpha = 0.7)
   }
 
-  p <- p + geom_hline(aes(yintercept = li), color = "#00740e", size = 4, alpha = 0.7) +
-    geom_hline(aes(yintercept = ls), color = "#00740e", size = 4, alpha = 0.7) +
+  p <- p + geom_hline(aes(yintercept = li), color = "#00740e", size = 2, alpha = 0.7) +
+    geom_hline(aes(yintercept = ls), color = "#00740e", size = 2, alpha = 0.7) +
     scale_color_manual(
       values = c("#5555ff", "#fd3b3b"),
       breaks = c(FALSE, TRUE),
       labels = c("Under control", "Out of control")
     ) +
-    geom_hline(aes(yintercept = mu), color = "black", size = 4, alpha = 0.7) +
+    geom_hline(aes(yintercept = mu), color = "black", size = 2, alpha = 0.7) +
     labs(
-      title = "Normal control chart for sample mean",
+      title = "Control chart for sample mean",
       subtitle = "",
       x = bquote(bold("Observations")),
       y = bquote(bold("Sample mean")),
@@ -217,19 +217,19 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
     ) +
     guides(color = guide_legend(title = NULL)) +
     theme(
-      plot.title = element_text(size = 30, face = "bold", margin = margin(b = 10)),
-      plot.subtitle = element_text(size = 20),
+      plot.title = element_text(size = 15, face = "bold", margin = margin(b = 10)),
+      plot.subtitle = element_text(size = 8),
       axis.title.x = element_text(
-        size = 20, face = "bold",
+        size = 10, face = "bold",
         margin = margin(30, 0, 0, 0)
       ),
       axis.title.y = element_text(
-        size = 20, face = "bold",
+        size = 10, face = "bold",
         margin = margin(0, 30, 0, 0)
       ),
-      axis.text = element_text(size = 20),
-      legend.title = element_text(size = 20),
-      legend.text = element_text(size = 20),
+      axis.text = element_text(size = 8),
+      legend.title = element_text(size = 8),
+      legend.text = element_text(size = 8),
       legend.position = "top",
       plot.margin = margin(0, 0, 0, 0, "cm") # Adjust the position of the second annotation
     )
@@ -241,7 +241,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
 
   p <-
@@ -251,7 +251,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
   p <-
     add_sub(
@@ -260,7 +260,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
 
   p <-
@@ -270,7 +270,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
 
   p <-
@@ -280,7 +280,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
 
   p <-
@@ -290,7 +290,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
 
   p <-
@@ -300,7 +300,7 @@ chart_n <- function(data, alpha = 0.0027, mu = NULL, sd = NULL) {
       x = 0,
       hjust = 0,
       vjust = 0,
-      size = 15
+      size = 8
     )
   ggdraw(p)
 }

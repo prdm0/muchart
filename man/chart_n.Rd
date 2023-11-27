@@ -13,7 +13,7 @@ chart_n(data, alpha = 0.0027, mu = NULL, sd = NULL)
 
 \item{mu}{The mean of the distribution}
 
-\item{sd}{The standard deviation of the distribution}
+\item{sd}{The shape parameter (standard deviation)}
 }
 \value{
 An ggplot2 object with the control limits plot

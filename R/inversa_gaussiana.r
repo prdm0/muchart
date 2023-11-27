@@ -222,7 +222,7 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
     ) +
     geom_hline(aes(yintercept = mu), color = "black", size = 2, alpha = 0.7) +
     labs(
-      title = "Inverse Gaussian control chart for sample mean",
+      title = "Control chart for sample mean",
       subtitle = "",
       x = bquote(bold("Observations")),
       y = bquote(bold("Sample mean")),
@@ -230,10 +230,10 @@ chart_ig <- function(data, alpha = 0.0027, mu = NULL, lambda = NULL) {
     ) +
     guides(color = guide_legend(title = NULL)) +
     theme(
-      plot.title = element_text(size = 14, face = "bold", margin = margin(b = 10)),
+      plot.title = element_text(size = 15, face = "bold", margin = margin(b = 10)),
       plot.subtitle = element_text(size = 8),
       axis.title.x = element_text(
-        size = 20, face = "bold",
+        size = 10, face = "bold",
         margin = margin(30, 0, 0, 0)
       ),
       axis.title.y = element_text(
